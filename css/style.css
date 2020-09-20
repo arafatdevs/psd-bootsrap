@@ -1,0 +1,409 @@
+header {
+  position: relative; }
+  header .navbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #45413c59; }
+    header .navbar li a {
+      color: #fff;
+      font-weight: bold;
+      position: relative;
+      padding: 25px 0; }
+      header .navbar li a::before {
+        content: "";
+        height: 2px;
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: -13px;
+        background-color: #f39c12;
+        transition: all .4s ease; }
+      header .navbar li a:hover:before {
+        width: 100%; }
+    header .navbar li:hover {
+      color: #f39c12; }
+  header .carousel-caption {
+    position: absolute;
+    bottom: 40%;
+    right: 17%;
+    transform: translateY(50%);
+    text-align: right; }
+    header .carousel-caption h5 {
+      font-size: 60px;
+      color: #f39c12;
+      text-transform: uppercase;
+      font-weight: 200; }
+    header .carousel-caption p {
+      font-size: 50px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600; }
+    header .carousel-caption .btn {
+      border-radius: 0;
+      background-color: #f39c12;
+      color: #fff;
+      padding: 8px 30px;
+      margin-left: 20px; }
+      header .carousel-caption .btn:hover {
+        background-color: transparent;
+        border: 1px solid #fff; }
+    header .carousel-caption .text-center {
+      margin-top: 100px; }
+  header .dropdown form input {
+    width: 180px;
+    border-radius: 0;
+    border: inherit;
+    padding: 5px 20px !important;
+    border: 0 !important;
+    box-shadow: inherit !important; }
+  header .dropdown-menu {
+    border-radius: 0;
+    position: absolute;
+    left: auto !important;
+    right: 0;
+    top: 85px !important;
+    padding: 4px 0; }
+  header .dropdown .dropdown-menu button {
+    border-radius: 0 !important;
+    background-color: #f39c12;
+    padding: 5px 10px;
+    position: absolute;
+    right: 6px; }
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  margin-left: 0px !important; }
+
+.my-work-section ul {
+  margin-bottom: 30px; }
+  .my-work-section ul li {
+    margin-right: 20px; }
+    .my-work-section ul li .btn {
+      border-radius: 0;
+      padding: 10px 20px;
+      font-family: tahoma;
+      font-weight: 500; }
+      .my-work-section ul li .btn:hover {
+        background-color: #f39c12;
+        color: white; }
+.my-work-section .work {
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px; }
+  .my-work-section .work .overcolor {
+    width: 100%;
+    height: 100%;
+    background: #00000052;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(0.1);
+    opacity: 0;
+    transition: all 1s ease; }
+  .my-work-section .work:hover .overcolor {
+    opacity: 1;
+    transform: scale(1); }
+  .my-work-section .work .photo-content {
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #0000007a;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s ease;
+    color: white;
+    padding-left: 15px; }
+    .my-work-section .work .photo-content h1 {
+      position: absolute;
+      font-size: 18px;
+      left: 0;
+      bottom: 0;
+      transition: all 1s ease; }
+  .my-work-section .work:hover .photo-content h1 {
+    left: 0;
+    bottom: 100px; }
+  .my-work-section .work:hover .photo-content {
+    opacity: 1; }
+  .my-work-section .work .search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 1s ease;
+    opacity: 0; }
+    .my-work-section .work .search i {
+      color: white;
+      background-color: #f39c12;
+      width: 45px;
+      display: inline-block;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      font-size: 15px;
+      border-radius: 50%; }
+  .my-work-section .work:hover .search {
+    right: 20px;
+    top: 20px;
+    opacity: 1; }
+
+.heading {
+  max-width: 400px;
+  margin: auto;
+  padding-bottom: 50px; }
+  .heading h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase; }
+  .heading .line {
+    position: relative;
+    display: block; }
+    .heading .line::before {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 1px;
+      background-color: #f39c12;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%); }
+    .heading .line::after {
+      position: absolute;
+      content: "";
+      height: 5px;
+      width: 40px;
+      background-color: #f39c12;
+      right: 50%;
+      bottom: 50%;
+      transform: translate(50%, 50%);
+      animation-name: animation1;
+      animation-direction: alternate;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+
+@keyframes animation1 {
+  0% {
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%); }
+  20% {
+    right: 0%;
+    bottom: 50%;
+    transform: translate(0%, 50%); }
+  40% {
+    right: 100%;
+    bottom: 50%;
+    transform: translate(100%, 50%); }
+  60% {
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%); }
+  80% {
+    right: 0%;
+    bottom: 50%;
+    transform: translate(0%, 50%); }
+  100% {
+    right: 100%;
+    bottom: 50%;
+    transform: translate(100%, 50%); } }
+.aboutme-content .progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #f39c12;
+  transition: width .6s ease;
+  animation-name: progress;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; }
+@keyframes progress {
+  from {
+    width: 0%; } }
+.aboutme-content ul .arrow-sign {
+  display: block;
+  background-color: #f39c12;
+  height: 27px;
+  width: 40px;
+  text-align: center;
+  position: relative;
+  margin-left: 33px;
+  margin-bottom: -6px;
+  color: #fff; }
+  .aboutme-content ul .arrow-sign::before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 30%;
+    border-right: 10px solid #f39c12;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent; }
+.aboutme-content .about-me-body p {
+  font-size: 15px;
+  padding: 2px 2px; }
+.aboutme-content .nav {
+  padding: 7px 0 !important;
+  font-weight: 500 !important;
+  font-size: 16px !important; }
+.aboutme-content .progress {
+  border-radius: 0 !important; }
+
+.service .triangle {
+  position: relative;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 0 2px #ededed;
+  transition: all 1s ease; }
+  .service .triangle:hover {
+    box-shadow: inherit;
+    background-color: #f39c12; }
+    .service .triangle:hover p {
+      color: #fff; }
+    .service .triangle:hover h4 {
+      color: #fff; }
+    .service .triangle:hover i {
+      color: #f39c12;
+      background-color: #fff; }
+    .service .triangle:hover::before {
+      width: 35px;
+      height: 35px;
+      opacity: 1; }
+  .service .triangle h4 {
+    color: #6e6e6e;
+    padding: 10px 0; }
+  .service .triangle p {
+    color: #6b6b6b; }
+  .service .triangle i {
+    background-color: #919190;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block; }
+    .service .triangle i::before {
+      font-size: 25px; }
+  .service .triangle::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-left: 2px solid #f39c12;
+    border-top: 2px solid #f39c12;
+    transition: all 1s ease;
+    opacity: 0; }
+  .service .triangle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 80px solid white;
+    border-left: 0px solid transparent;
+    border-right: 80px solid transparent; }
+
+.static-section {
+  background-image: url(../images/statistics.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 0;
+  text-align: center;
+  height: 100%;
+  position: relative; }
+  .static-section::before {
+    content: "";
+    position: absolute;
+    background-color: #0000007a;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  .static-section::after {
+    content: ""; }
+  .static-section .container {
+    position: relative; }
+    .static-section .container .row {
+      position: relative; }
+      .static-section .container .row::before {
+        content: "";
+        width: 97%;
+        position: absolute;
+        background-color: #fff;
+        height: 5px;
+        bottom: 47%;
+        transform: translateY(47%);
+        transform: scaleX(0.7);
+        z-index: 0; }
+  .static-section .heading h1 {
+    color: #fff;
+    padding-bottom: 25px; }
+  .static-section .static {
+    padding: 55px 0;
+    position: relative; }
+    .static-section .static i {
+      background-color: #fff;
+      color: #f39c12;
+      border-radius: 50%;
+      font-size: 30px;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      display: inline-block;
+      margin: 25px 0; }
+    .static-section .static h2 {
+      font-size: 35px;
+      color: #fff;
+      font-weight: bold; }
+    .static-section .static h3 {
+      font-size: 25px;
+      font-weight: bold;
+      color: #fff; }
+
+.my-work-section {
+  padding: 70px 0; }
+
+.life-changeing-section {
+  padding: 60px 0;
+  background-color: #262626; }
+  .life-changeing-section .heading h1 {
+    color: #fff;
+    font-size: 35px; }
+  .life-changeing-section .about-me-body p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+    padding: 25px 20px; }
+
+.tweet-section {
+  background-color: #262626;
+  background-image: url(../images/tweet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 65px 0; }
+  .tweet-section::before {
+    content: "";
+    position: absolute;
+    background-color: #0000007a;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  .tweet-section .heading h1 {
+    color: #fff;
+    font-size: 35px; }
+  .tweet-section .tweet-content {
+    padding: 20px 0; }
+    .tweet-section .tweet-content p {
+      color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
